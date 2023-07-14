@@ -1,0 +1,176 @@
+/* * {
+  background-color: rgb(255 243 201);
+} */
+body{
+  background-image: url("images/lighting.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lucida Console", "Courier New", monospace;
+}   
+#temp {
+    position: absolute;
+    text-align: left;
+    font-size: x-large;
+    padding-left: 30px;
+    margin:20px;
+}
+
+#tempHead {
+    position: absolute;
+  text-align: left;
+  font-size: x-large;
+  padding-left: 30px;
+  /* width: 25%; */
+  /* height: auto; */
+}
+#date{
+  position: absolute;
+  text-align: left;
+  font-size:x-large;
+  margin-left: 30px;
+  margin-top: 100px;
+  line-height: 30px;
+  padding: 10px;
+  border: 2px dashed black;
+  opacity: 50%;
+  background-color: #fff;
+}
+#humi {
+    position: absolute;
+    text-align: right;
+    font-size: x-large;
+    /* padding-right: 30px; */
+    right: 3%;
+    /* width: 25%; */
+    height: auto;
+    margin:20px;
+}
+
+#humidHead {
+  position: absolute;
+  text-align: right;
+  font-size: x-large;
+  /* padding-right: 30px; */
+  right: 3%;
+  /* width: 25%; */
+  height: auto;
+}
+
+img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15%;
+  /* height: auto; */
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  opacity: 10%;
+}
+
+header h1 {
+  /* font-family: "Lucida Console", "Monaco", monospace;   */
+  font-family: Comic Sans MS, Comic Sans, cursive;  
+  font-size: 50px;
+  font-weight: 600;
+  background: linear-gradient(90deg, rgba(0,165,233,1) 0%, rgba(45,77,165,0.48792016806722693) 52%, rgba(123,0,255,1) 100%);  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+td {
+  /* background-color: rgb(255, 255, 255); */
+  background-color: rgba(0,0,0,.5);
+  /* border-right: 2px solid white; */
+    color: #fff;
+  padding: 50px;
+  line-height: 25px;
+}
+
+table {
+  /* border: 1px solid black; */
+  margin: auto auto;
+  margin-top: 30px;
+  left: 400px;
+  /* border-radius:50%; */
+  /* border-right: 2px solid white; */
+}
+nav {
+  /* background-color: #333; */
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  /* background-color: rgb(221, 221, 221); */
+  background-color: rgba(0,0,0,.4);
+  /* color: #333; */
+}
+nav a.active {
+  border-bottom: 2px solid rgb(7, 7, 12);
+}
+.search{
+  margin-top: 225px;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  background-color: transparent;
+}
+#searchDate{
+  border-radius: 3px;
+  background-color: rgb(213, 240, 248);
+}
+input[type="search"] {
+  background-color: transparent;
+}
+/* .searchInput{
+  border-radius: 5px;
+  background-color: 
+} */
+#top-offcanvas {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 1000;
+  /* Other styles for the offcanvas */
+}
+/* .navbar-nav .nav-link {
+  color: #ffffff; 
+} */
+button {
+  background-color: transparent;
+  border: none; /* Remove border */
+  color: white; /* White text color */
+  padding: 12px 24px; /* Add padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it inline */
+  font-size: 16px; /* Set font size */
+  margin: 4px 2px; /* Add margin */
+  cursor: pointer; /* Add cursor pointer */
+}

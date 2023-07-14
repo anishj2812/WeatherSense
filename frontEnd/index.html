@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherSense</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-+iU2m6Rilz6/cZrm2O6vIcM1TjGBMg8yKhWpnyvYgrLsKVg0D//67GdWZ0v+lw3q0pHyDfzrIbE6Y0z6U2F6Rg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid justify-content-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-center">
+          <ul class="navbar-nav justify-content-center">
+            <li class="nav-item">
+              <button  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1" aria-controls="offcanvasExample1">
+                About
+              </button>
+            </li>
+            <li class="nav-item">
+              <button  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
+                Contact
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <h1>WeatherSense</h1>
+</header>
+  <img src="images/weather.gif" alt="My Cool Animated GIF">
+  <div id="tempHead">Temperature</div>
+  <div id="humidHead">Humidity</div>
+  <br>
+  <div id="temp">.. C/F</div>
+  <div id="humi">.. %</div>
+  <div id="date">date</div>
+  <div class="container-fluid search">
+    <form  role="search">
+      <input  type="date" id="searchDate" format="yyyy-mm-dd">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+    <table>
+      <tbody>
+        <tr>
+          <td id="day7">1</td>
+          <td id="day6">2</td>
+          <td id="day5">3</td>
+          <td id="day4">4</td>
+          <td id="day3">5</td>
+          <td id="day2">6</td>
+          <td id="day1">7</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">About</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        This weather website is intended to show temperature and humidity of one of the computer rooms of IIIT- Allahabad. The resulting data come from the webservices hosted in one of the virtual machines in the lab seeking data from the sensors.
+        <!-- <br> © aj ltd 2023 -->
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Contact</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Developed by: <br>
+        Anish Jain - anishj469@gmail.com <br> 
+        © aj ltd 2023
+      </div>
+    </div>
+    <script src="weather.js"></script>
+    <script src="bootstrap.js"></script>
+</html>
